@@ -7,7 +7,7 @@ body{
 }
 
 .header{
-   background-color: green;
+   background-color: #333333;
    position:fixed;
    width:100%;
 }
@@ -17,8 +17,11 @@ body{
    width:60%;
 }
 
+
+
+
 .navigation{
-   background-color: green;
+   background-color: #333333;
    overflow:hidden;
    padding:10px;
    float:right;
@@ -35,7 +38,7 @@ body{
 }
 
 .navigation a:hover{
-   color:orange;
+   color: #333333;
    background-color: white;
 }
 
