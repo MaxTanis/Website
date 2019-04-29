@@ -64,7 +64,29 @@ li {
 }
 
 img{
-   height: 50%;
-   width: 50%;
+   height: 35%;
+   width: 35%;
    display:block;
+}
+
+.auto{
+   float:right;
+   margin-right:0;
+   margin-left: 10px;
+}
+
+.bus {
+   float:left;
+   margin-left:0;
+   margin-right:10px;
+   clear: both;
+   display: block;
+   width: 100%;
+   margin-top: 10px;
+}
+
+.bus img {
+   float:left;
+   margin-left:0;
+   margin-right:10px;
 }
