@@ -1,13 +1,10 @@
 body{
    margin:0;
    padding:0;
-   background:orange;
-
+   background-image:url("https://revcycleintelligence.com/images/site/article_headers/_large/GettyImages_2019-02-20_big_data%2C_AI%2C_robots.jpg");
+   background-size: cover;
    font-size:16px;
 }
-
-
-
 
 .header{
    background-color: green;
@@ -23,7 +20,7 @@ body{
 .navigation{
    background-color: green;
    overflow:hidden;
-
+   padding:10px;
    float:right;
    text-align:left;
 }
