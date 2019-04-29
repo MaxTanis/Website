@@ -54,11 +54,17 @@ li {
 .content{
    background-color:#FFFAFA;
    padding:20px;
-   margin-top:25px;
+   margin-top:45px;
 }
 
 .footer{
    background-color: #333333;
    padding:20px;
    color: #FFFAFA;
+}
+
+img{
+   height: 50%;
+   width: 50%;
+   display:block;
 }
