@@ -128,4 +128,7 @@ img {
    .auto-klein, .bus-klein {
       display:block;
    }
+   .navigation{
+      float:left;
+   }
 }
