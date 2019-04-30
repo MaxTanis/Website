@@ -3,7 +3,7 @@ body{
    padding:0;
    background-image:url("https://revcycleintelligence.com/images/site/article_headers/_large/GettyImages_2019-02-20_big_data%2C_AI%2C_robots.jpg");
    background-size: cover;
-   font-size:16px;
+   font-size:18px;
 }
 
 nav {
@@ -15,9 +15,6 @@ nav {
 li {
    display:inline;
 }
-
-
-
 
 .navigation{
    background-color: #333333;
@@ -36,6 +33,11 @@ li {
 
 }
 
+.navigation a.active{
+   background-color: #FFFAFA;
+   color: #333333;
+}
+
 .navigation a:hover{
    color: #333333;
    background-color: #FFFAFA;
@@ -43,8 +45,15 @@ li {
 
 .navigation-container, .container {
    margin: auto;
-   width: 60%;
+   width: 950px;
 }
+
+@media (max-width: 960px) {
+   .navigation-container, .container {
+      width: 100%;
+   }
+}
+
 .container {
    border: 1px solid black;
    text-align:left;
@@ -73,6 +82,12 @@ img{
    float:right;
    margin-right:0;
    margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+   .auto, .bus img {
+      display:none;
+   }
 }
 
 .bus {
