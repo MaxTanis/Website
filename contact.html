@@ -25,7 +25,35 @@
             </div>
          </div>
       </nav>
-
+      <div class="container">
+         <div class="content">
+            <h1>
+               Vragen
+            </h1>
+            <form>
+               <fieldset>
+                  <legend>Persoonlijke gegevens</legend>
+                  <input type="text" name="voornaam" placeholder="Voornaam" pattern="[A-Za-z]{1-20}" required>
+                  <br><br>
+                  <input type="text" name="achternaam" placeholder="Achtermaam" pattern="[A-Za-z]{1-20}" required>
+                  <br><br>
+                  Geslacht:<br>
+                  <input type="radio" name="geslacht" value="Man" required="required">Man<br>
+                  <input type="radio" name="geslacht" value="Vrouw" required="required">Vrouw<br>
+                  <input type="radio" name="geslacht" value="Anders" required="required">Anders<br>
+                  <br>
+                  <input type="text" name="E-mail" placeholder="E-mail" required>
+                  <br><br>
+                  <input type="text" name="Telefoonnummer" placeholder="Telefoonnummer" pattern="[0-9+-]{10-11}" required>
+                  <br><br>
+                  <label for="Land"></label>
+                  <input type="text" name="Land" placeholder="Land" required>
+                  <br><br>
+                  <input type="submit">
+               </fieldset>
+            </form>
+         </div>
+      </div>
    </body>
 </html>
 
