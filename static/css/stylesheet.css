@@ -151,10 +151,19 @@ table {
    width: 100%;
 }
 
+table, th, td  {
+   border-bottom: 1px solid #ddd;
+   text-align: left;
+}
+
 thead, tbody {
    text-align:left;
    padding: 8px;
 
+}
+
+tr:hover {
+   background-color:#F2F2F2;
 }
 
 tr:nth-child(even){
