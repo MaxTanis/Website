@@ -89,17 +89,17 @@ img {
    width: 35%;
 }
 
-.bus-klein {
+.bus-klein, .ar-in-auto_klein {
    display: none;
    width: 100%;
 }
 
-.auto-klein{
+.auto-klein, .ar-klein{
    display:none;
    width:100%;
 }
 
-.auto-groot {
+.auto-groot, .ar-groot {
    float:right;
    margin-right:0;
    margin-left: 10px;
@@ -115,17 +115,17 @@ img {
    margin-top: 10px;
 }
 
-.bus img {
+.bus img, .ar-in-auto_groot {
    float:left;
    margin-left:0;
    margin-right:10px;
 }
 
 @media (max-width: 650px) {
-   .auto-groot, .bus-groot {
+   .auto-groot, .bus-groot, .ar-groot, .ar-in-auto_groot {
       display:none;
    }
-   .auto-klein, .bus-klein {
+   .auto-klein, .bus-klein, .ar-klein, .ar-in-auto_klein {
       display:block;
    }
    .navigation{
