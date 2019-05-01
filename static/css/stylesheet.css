@@ -162,6 +162,16 @@ thead, tbody {
 
 }
 
+th{
+   background-color: #333333;
+   color: #FFFAFA;
+   padding:10px;
+}
+
+td{
+   padding:5px;
+}
+
 tr:hover {
    background-color:#F2F2F2;
 }
