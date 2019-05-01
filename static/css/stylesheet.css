@@ -7,18 +7,20 @@ body{
    font-family:sans-serif;
 }
 
-nav {
+#navigation {
    background-color: #333333;
    position:fixed;
+   left: 0;
+   top: 0;
    width:100%;
 }
 
-nav ul {
+.navigation ul {
    margin:0;
    padding:0;
 }
 
-nav ul li {
+.navigation ul li {
    display:inline;
 }
 
@@ -50,7 +52,7 @@ nav ul li {
 }
 
 .navigation-container, .container {
-   margin: auto;
+   margin: 0 auto;
    width: 950px;
 }
 
@@ -142,4 +144,19 @@ textarea {
    .formulier, textarea {
       width:100%;
    }
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+thead, tbody {
+   text-align:left;
+   padding: 8px;
+
+}
+
+tr:nth-child(even){
+   background-color: #F2F2F2;
 }
