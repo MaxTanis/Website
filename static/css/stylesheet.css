@@ -52,13 +52,11 @@ body{
 
 .navigation-container, .container {
    margin: 0 auto;
-   width: 950px;
 }
 
-@media (max-width: 950px) {
+@media (min-width: 960px) {
    .navigation-container, .container {
-      width: 99%;
-
+      width: 950px;
    }
 }
 
@@ -84,6 +82,11 @@ img{
    height: 35%;
    width: 35%;
    display:block;
+   border-radius: 8px;
+   border: 1px solid #ddd;
+   padding: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   filter: ;
 }
 
 img {
@@ -94,11 +97,17 @@ img {
 .bus-klein, .ar-in-auto_klein {
    display: none;
    width: 100%;
+   margin-top: 0;
+}
+
+.bus-klein {
+   margin-bottom: 10px;
 }
 
 .auto-klein, .ar-klein{
    display:none;
    width:100%;
+   margin-top: 10px;
 }
 
 .auto-groot, .ar-groot {
@@ -107,31 +116,36 @@ img {
    margin-left: 10px;
 }
 
-.bus {
+.bus-groot {
    float:left;
    margin-left:0;
    margin-right:10px;
+   /*
    clear: both;
    display: block;
    width: 100%;
-   margin-top: 10px;
+    */
 }
 
 .bus img, .ar-in-auto_groot {
-   float:left;
-   margin-left:0;
-   margin-right:10px;
+   float: left;
+   margin-left: 0;
+   margin-right: 10px;
+}
+
+.ar-in-auto_klein{
+   margin-top: 10px;
 }
 
 @media (max-width: 650px) {
    .auto-groot, .bus-groot, .ar-groot, .ar-in-auto_groot {
-      display:none;
+      display: none;
    }
    .auto-klein, .bus-klein, .ar-klein, .ar-in-auto_klein {
-      display:block;
+      display: block;
    }
    .navigation{
-      float:left;
+      float: left;
    }
 }
 
