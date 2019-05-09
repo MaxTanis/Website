@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
-      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=10">
+      <title>Contact</title>
       <link rel="stylesheet" href="static/css/stylesheet.css">
+      <link rel="shortcut icon" type="image/x-icon" href="static/images/car-icon.png">
    </head>
    <body>
-      <nav>
+   <nav>
+      <div id="navigation">
          <div class="navigation-container">
             <div class="navigation">
                <ul>
@@ -24,12 +28,14 @@
                </ul>
             </div>
          </div>
-      </nav>
+      </div>
+   </nav>
       <div class="container">
          <div class="content">
             <h1>
                Vragen
             </h1>
+<<<<<<< HEAD
             <form>
                <fieldset>
                   <legend>Persoonlijke gegevens</legend>
@@ -63,6 +69,63 @@
                  </label> 
               </fieldset>
             </form>
+=======
+            <div class="formulier">
+               <form >
+                  <fieldset>
+                     <legend>Persoonlijke gegevens</legend>
+                     <label>
+                        <input type="text" name="voornaam" placeholder="Voornaam" pattern="[A-Za-z]{1,20}" title="Voornaam" required autofocus/>
+                     </label>
+                     <br><br>
+                     <label>
+                        <input type="text" name="achternaam" placeholder="Achtermaam" pattern="[A-Za-z]{1,20}" title="Achternaam" required>
+                     </label>
+                        <br><br>
+                     <label>
+                        Geslacht:<br>
+                        <input type="radio" name="geslacht" value="Man" required="required">Man<br>
+                        <input type="radio" name="geslacht" value="Vrouw" required="required">Vrouw<br>
+                        <input type="radio" name="geslacht" value="Anders" required="required">Anders<br>
+                     </label>
+                        <br>
+                     <label>
+                        <input type="text" name="E-mail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="gebruik een geldig e-mailadres" required>
+                     </label>
+                        <br><br>
+                     <label>
+                        <input type="text" name="Telefoonnummer" placeholder="Telefoonnummer" pattern="[0-9+-]{10,11}" title="gebruik een geldig telefoon nummer" required>
+                     </label>
+                        <br><br>
+                     <label>
+                        <input list="Land" name="Land" placeholder="Land" required>
+                        <datalist id="Land">
+                           <option value="Nederland"></option>
+                           <option value="Duitsland"></option>
+                           <option value="Frankrijk"></option>
+                           <option value="Engeland"></option>
+                           <option value="Spanje"></option>
+                           <option value="Oostenrijk"></option>
+                        </datalist>
+                     </label>
+                        <br><br>
+                     Uw vraag:<br>
+                     <label>
+                        <textarea name="Vraag"></textarea><br>
+                     </label>
+                     <input type="reset" Value="Reset"><input type="submit" value="Verzenden">
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+         <div class="footer">
+            <h2>
+               Contact informatie
+            </h2>
+            <p>
+               Voor vragen of meer in
+            </p>
+>>>>>>> 32396253789b605ae6ce494dd797fcdb01c6c3f7
          </div>
       </div>
    </body>

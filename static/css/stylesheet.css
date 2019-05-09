@@ -1,24 +1,25 @@
 body{
    margin: 0;
    padding:0;
-   background-image:url("../images/achtergrond_66%.jpg");
-   background-size: cover;
+   background-image:url("../images/achtergrond_66.jpg");
    font-size:16px;
    font-family:sans-serif;
 }
 
-nav {
+#navigation {
    background-color: #333333;
    position:fixed;
+   left: 0;
+   top: 0;
    width:100%;
 }
 
-ul {
+.navigation ul {
    margin:0;
    padding:0;
 }
 
-li {
+.navigation ul li {
    display:inline;
 }
 
@@ -50,13 +51,12 @@ li {
 }
 
 .navigation-container, .container {
-   margin: auto;
-   width: 950px;
+   margin: 0 auto;
 }
 
-@media (max-width: 960px) {
+@media (min-width: 960px) {
    .navigation-container, .container {
-      width: 100%;
+      width: 950px;
    }
 }
 
@@ -82,6 +82,11 @@ img{
    height: 35%;
    width: 35%;
    display:block;
+   border-radius: 8px;
+   border: 1px solid #ddd;
+   padding: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   filter: ;
 }
 
 img {
@@ -89,46 +94,120 @@ img {
    width: 35%;
 }
 
-.bus-klein {
+.bus-klein, .ar-in-auto_klein {
    display: none;
    width: 100%;
+   margin-top: 0;
 }
 
-.auto-klein{
+.bus-klein {
+   margin-bottom: 10px;
+}
+
+.auto-klein, .ar-klein{
    display:none;
    width:100%;
+   margin-top: 10px;
 }
 
-.auto-groot {
+.auto-groot, .ar-groot {
    float:right;
    margin-right:0;
    margin-left: 10px;
 }
 
-.bus {
+.bus-groot {
    float:left;
    margin-left:0;
    margin-right:10px;
+   /*
    clear: both;
    display: block;
    width: 100%;
+    */
+}
+
+.bus img, .ar-in-auto_groot {
+   float: left;
+   margin-left: 0;
+   margin-right: 10px;
+}
+
+.ar-in-auto_klein{
    margin-top: 10px;
 }
 
-.bus img {
-   float:left;
-   margin-left:0;
-   margin-right:10px;
+@media (max-width: 650px) {
+   .auto-groot, .bus-groot, .ar-groot, .ar-in-auto_groot {
+      display: none;
+   }
+   .auto-klein, .bus-klein, .ar-klein, .ar-in-auto_klein {
+      display: block;
+   }
+   .navigation{
+      float: left;
+   }
+}
+
+textarea {
+   height:150px;
+   width:100%;
 }
 
 @media (max-width: 650px) {
-   .auto-groot, .bus-groot {
-      display:none;
+   .formulier, textarea {
+      width:100%;
    }
-   .auto-klein, .bus-klein {
-      display:block;
-   }
-   .navigation{
-      float:left;
-   }
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+table, th, td  {
+   border-bottom: 1px solid #ddd;
+   text-align: left;
+}
+
+thead, tbody {
+   text-align:left;
+   padding: 8px;
+
+}
+
+th{
+   background-color: #333333;
+   color: #FFFAFA;
+   padding: 10px;
+}
+
+td{
+   padding:5px;
+}
+
+tr:hover {
+   background-color:#F2F2F2;
+}
+
+tr:nth-child(even){
+   background-color: #F2F2F2;
+}
+
+input[type="text"]:focus{
+   border: 2px solid #555555;
+}
+
+textarea {
+   resize:none;
+}
+
+input[type="submit"], input[type="reset"]{
+   background-color: #333333;
+   color:#F2F2F2;
+   border: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   padding:8px 16px;
+   text-decoration: none;
 }
