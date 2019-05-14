@@ -89,11 +89,6 @@ img{
    filter: ;
 }
 
-img {
-   height: 35%;
-   width: 35%;
-}
-
 .bus-klein, .ar-in-auto_klein {
    display: none;
    width: 100%;
@@ -210,4 +205,18 @@ input[type="submit"], input[type="reset"]{
    cursor: pointer;
    padding:8px 16px;
    text-decoration: none;
+}
+
+.contact-links{
+   width:50px;
+   display:inline-block;
+}
+
+.footer a {
+   color: #337ab7;
+   text-decoration: none;
+}
+
+.footer a:hover {
+   text-decoration: underline;
 }
