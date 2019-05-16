@@ -208,7 +208,7 @@ tr:nth-child(even){
    background-color: #F2F2F2;
 }
 
-input[type="text"]:focus{
+textarea:focus, input:focus {
    border: 2px solid #555555;
 }
 
