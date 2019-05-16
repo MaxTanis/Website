@@ -95,29 +95,29 @@ body{
    margin-top: 10px;
 }
 
-.bus-klein, .ar-in-auto_klein {
+.container .bus-klein, .container .ar-in-auto_klein {
    display: none;
    width: 100%;
    margin-top: 0;
 }
 
-.bus-klein {
+.container .bus-klein {
    margin-bottom: 10px;
 }
 
-.auto-klein, .ar-klein{
+.container .auto-klein, .container .ar-klein{
    display:none;
    width:100%;
    margin-top: 10px;
 }
 
-.auto-groot, .ar-groot {
+.container .auto-groot, .container .ar-groot {
    float:right;
    margin-right:0;
    margin-left: 10px;
 }
 
-.bus-groot {
+.container .bus-groot {
    float:left;
    margin-left:0;
    margin-right:10px;
@@ -128,21 +128,21 @@ body{
     */
 }
 
-.bus img, .ar-in-auto_groot {
+.container .bus img, .container .ar-in-auto_groot {
    float: left;
    margin-left: 0;
    margin-right: 10px;
 }
 
-.ar-in-auto_klein{
+.container .ar-in-auto_klein{
    margin-top: 10px;
 }
 
 @media (max-width: 650px) {
-   .auto-groot, .bus-groot, .ar-groot, .ar-in-auto_groot {
+   .container .auto-groot, .container .bus-groot, .container .ar-groot, .container .ar-in-auto_groot {
       display: none;
    }
-   .auto-klein, .bus-klein, .ar-klein, .ar-in-auto_klein {
+   .container .auto-klein, .container .bus-klein, .container .ar-klein, .container .ar-in-auto_klein {
       display: block;
    }
    .navigation{
